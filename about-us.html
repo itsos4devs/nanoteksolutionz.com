@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Get great care from anywhere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>VoyaHealth</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/voya-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192106551-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-192106551-1');
+    </script>
+
+    <!-- Lottie Animations -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <style>
+        .menu-list {
+            list-style: none;
+            display: inline-flex;
+        }
+        
+        .menu-list-mobile {
+            list-style: none;
+            display: block;
+            padding: 0;
+        }
+        
+        .voya-menu {
+            text-align: center;
+        }
+        
+        .menu-list.voya-center-menu {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu-list li a {
+            font-size: 14px;
+            font-family: ProximaNovaReg;
+            color: #48546B;
+            padding-right: 40px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .menu-list.voya-center-menu li a {
+            padding-right: 10px;
+        }
+        
+        .menu-list-mobile li {
+            text-align: center;
+        }
+        
+        .menu-list-mobile li a {
+            font-weight: 600;
+            font-size: 14px;
+            font-family: ProximaNovaReg;
+            color: #48546B;
+            text-decoration: none;
+        }
+        .voya-section-band--temp {
+            position: relative;
+        }
+
+        .about-img1 {
+            background-image: url(./assets/img/about-img1.svg);
+            background-repeat: no-repeat;
+        }
+        
+        .voya-container-fluid {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin: 0 auto;
+            -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .voya-width-25 {
+            width: 25%;
+        }
+        
+        .voya-width-50 {
+            width: 50%;
+        }
+        
+        .about-mt-img {
+            margin: 180px 0;
+            text-align: center;
+        }
+        
+        .about-img-center {
+            text-align: center;
+        }
+        .top-title-text {
+            text-align: left;
+        }
+        
+        @media (max-width:768px) {
+            .voya-mobile-width-100 {
+                width: 100%;
+            }
+            .voya-container-fluid {
+                padding: 0 20px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .voya-container-fluid .voya-content-section,
+            .top-title-text {
+                max-width: 1024px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .voya-container-fluid .voya-content-section,
+            .top-title-text {
+                max-width: 1200px !important;
+                margin: 0 auto;
+            }
+        }
+        @media (min-width: 1900px) {
+            .voya-container-fluid .voya-content-section,
+            .top-title-text {
+                max-width: 1200px !important;
+                margin: 0 auto;
+            }
+        }
+        @media (min-width: 2560px) {
+            .voya-container-fluid .voya-content-section,
+            .top-title-text {
+                max-width: 1700px !important;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <div class="mdl-layout mdl-js-layout">
+        <!-- main site navigation -->
+        <header class="nanotek-header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row fixed-container">
+                <div class="mdl-cell--3-col">
+                    <span class="mdl-layout-title">
+                        <a href="./index.html"><img src="assets/img/logo.svg" class="nanotek-logo-image logo-with-drawer"></a>
+                    </span>
+                </div>
+                <div class="menu-hiddion-mobile mdl-cell--2-offset-desktop mdl-cell--6-col-desktop">
+                    <ul class="menu-list">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div style="display:none" class="nanotek-navigation-container voya-signin-hiddion-mobile mdl-cell--4-col">
+                    <nav class="nanotek-navigation mdl-navigation voya-nav-right">
+                        <a href="https://alexis.voyahealth.com/login" class="nanotek-button">Log In</a>
+                        <a href="https://alexis.voyahealth.com/signup" class="nanotek-button-colored">Sign Up</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="nanotek-drawer mdl-layout__drawer">
+            <nav class="mdl-navigation">
+                <ul class="menu-list-mobile">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div style="display:none">
+                    <a href="https://alexis.voyahealth.com/login" class="mdl-button voya-button-mobile">Log In</a>
+                    <br />
+                    <a href="https://alexis.voyahealth.com/signup" class="mdl-button voya-button-mobile-colored">Sign Up</a>
+                </div>
+                <br /><br />
+                <div style="margin-left: 10px;">
+                    <span>Download the Voya Health app</span><br /><br />
+                    <a href="https://apps.apple.com/us/app/voya-health/id1534621456">
+                        <img src="assets/img/appstore.svg" /></a><br /><br />
+                    <a href="https://play.google.com/store/apps/details?id=com.voyahealth.app">
+                        <img src="assets/img/google-play.svg" /></a>
+                </div>
+            </nav>
+        </div>
+        <!--top image-->
+        <div class="nanotek-container-fluid">
+            <div class="nanotek-width-25 voya-hiddien-mobile">
+                <img src="./assets/img/about-img1.svg" class="nanotek-align-left">
+
+            </div>
+            <div class="nanotek-width-50 voya-mobile-width-100 voya-content-section">
+                <div class="nanotek-slogan mdl-layout-title" align="center">
+                    <svg class="nanotek-align-right" width="70" height="21" viewBox="0 0 70 21" fill="none" xmlns="https://www.w3.org/2000/svg">
+<path d="M56.9642 7.08449C56.7228 7.08449 54.0677 7.08449 51.1711 7.08449C48.5159 3.23504 41.2746 0.552098 32.8263 0.202148C32.1021 0.202148 31.1366 0.202148 30.4125 0.202148H29.2056C20.2746 0.202148 12.7918 3.23504 10.6194 7.20114C4.5849 8.01768 0.240074 10.584 -0.00130495 13.6169C-0.242684 17.3497 5.7918 20.4992 13.5159 20.6159H15.9297C16.6539 20.7325 17.378 20.7325 17.8608 20.7325L22.6883 20.6159L33.309 20.7325C33.7918 20.7325 34.2746 20.7325 34.7573 20.6159C35.2401 20.7325 35.7228 20.7325 36.2056 20.7325L55.9987 20.6159C63.7228 20.4992 69.7573 17.3497 69.5159 13.6169C69.7573 10.1174 63.9642 7.31779 56.9642 7.08449Z" fill="#A5E0DE"/>
+</svg>
+
+                    <h2 style="text-align: center;" class="nanotek-pt-4 font-header font-primary">About Us</h2>
+                    <img src="./assets/img/about-banner.svg" class="nanotek-index-image-wid60">  
+                </div>
+            </div>
+            <div class="nanotek-width-25 voya-hiddien-mobile">
+                <img src="./assets/img/about-img2.svg" class="nanotek-align-right">
+            </div>
+        </div>
+        <div class="nanotek-container-fluid">
+            <div class="nanotek-width-25 about-mt-img voya-hiddien-mobile">
+                <img src="./assets/img/about-img3.svg">
+
+            </div>
+            <div class="nanotek-width-50 voya-mobile-width-100 voya-content-section">
+                <div class="top-title-text">
+                    <h3 class="font-primary font-large voya-hd-lh voya-pt-4">Our Mission</h3>
+                    <h4 class="font-secondary font-regular">To empower humanity to lead a healthier life.</h4>
+                </div>
+
+                <h3 class="font-primary font-large voya-hd-lh" style="padding-top:18px;">Here because we care.</h3>
+                <h4 class="font-secondary font-regular voya-mt-0">Our journey started with an aspiration to create a healthcare company that would enable the human spirit to run free in an equalizing space, a place where people of all backgrounds, all ages, all genders and pronouns, rich and poor, could access evidence-based care and lead a healthier life together.
+                </h4>
+                <h4 class="font-secondary font-regular voya-mt-0">Because we believe we each possess within ourselves at every moment of our lives, under all circumstances, the power to transform the quality of our lives - we saw a need for a community-based approach to health that could deliver the
+                    most effective personalized care.</h4>
+
+                <h4 class="font-secondary font-regular voya-mt-0">We know and respect that feeling of liberation from pain symptoms that allow you to move freely and achieve your wildest imaginations, and that feeling is what we are championing here for you at Voya Health.</h4>
+
+                <h4 class="font-secondary font-regular voya-mt-0">Our social responsibility, as we design the next frontier of healthcare, is to create an environment where one's inward journey towards recovery has a means for outward connection with others. We are all in this together and, it’s true,
+                    we are truly better together.</h4>
+                <h3 class="nanotek-section-band-text">Join Our Band!</h3>
+                <h4 class="font-secondary font-regular">Got talent, a deep desire to make a difference and lasting impact in this world? That is music to our ears and you have come to the right place. We are always looking for more bandmates to riff with.</h4>
+
+                <div align="center">
+                    <a href="https://voyahealth.applytojob.com/apply" target="_blank">
+                        <button class="mdl-button voya-learn-more-button-colored voya-mt-2">Search listings</button>
+                    </a>
+                </div>
+            </div>
+            <div class="nanotek-width-25 about-img-center voya-hiddien-mobile">
+                <img src="./assets/img/about-img4.svg">
+            </div>
+
+
+        </div>
+
+
+        <!--Have a question?-->
+        <div class="nanotek-main-section" style="margin-bottom: 35px;">
+            <div class="home-banner4">
+                <div align="center">
+                    <div class="nanotek-have-question-section fixed-container">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--3-col-desktop voya-munchkin">
+                                <img src="assets/img/chandice_in_overalls.svg" class="left"/>
+                            </div>
+                            <div class="mdl-cell--6-col-desktop banner-text">
+                                <div style="padding-top:80px;">
+                                    <img src="./assets/img/phone.svg">
+                                    <h3 style="text-align: center;" class="font-x-standard font-primary">Have a question?</h3>
+                                    <h4 style="text-align: center;" class="font-secondary font-small">Voya Health at <a class="nanotek-link mdl-typography" href="mailto: hello@voyahealth.com">hello@voyahealth.com</a>
+                                        <br/>or call us at <a class="nanotek-link mdl-typography" href="tel: +1866-719-9611"> +1 (866) 719-9611</a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="mdl-cell--3-col-desktop voya-munchkin">
+                                <img src="assets/img/redhead_girl.svg" class="right"/>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section-->
+        <footer class="nanotek-footer">
+            <div class="fixed-container">
+                <div class="mdl-mega-footer__middle-section mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col  mdl-cell--12-col-phone">
+                        <a href="./index.html">
+                            <img src="assets/img/logo.svg" class="nanotek-logo-image-ft" />
+                        </a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col  mdl-cell--12-col-phone">
+                        <div class="footer-links">
+                            <p class="mdl-typography--font-bold voya-footer-mb-0">
+                                <a class="nanotek-link mdl-typography" href="./about-us.html"><b>About</b></a>
+                            </p>
+                            <p class="mdl-typography--font-bold voya-footer-mb-0">
+                                <a class="nanotek-link mdl-typography" href="./faq.html"><b>FAQ</b></a>
+                            </p>
+                            <p class="mdl-typography--font-bold voya-question-text">Have a question?</p>
+                            <div class="nanotek-mail">
+                                <a class="nanotek-link mdl-typography" href="mailto: hello@voyahealth.com">hello@voyahealth.com</a>
+                            </div>
+                            <div class="nanotek-phone-no">
+                                <a class="nanotek-link mdl-typography" href="tel: +1866-719-9611">Phone +1 (866) 719-9611</a><br />
+                                <a class="nanotek-link mdl-typography" href="tel: +1901-284-2536">Fax +1 (901) 284-2536</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col  mdl-cell--12-col-phone voya-apps-ft mdl-textfield--align-right">
+                        <div class="nanotek-appstore">
+                            <a href="https://apps.apple.com/us/app/voya-health/id1534621456">
+                                <img src="assets/img/appstore.svg" /></a>
+                        </div>
+                        <div class="nanotek-google-play">
+                            <a href="https://play.google.com/store/apps/details?id=com.voyahealth.app">
+                                <img src="assets/img/google-play.svg" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col  mdl-cell--12-col-phone voya-copyright-text mdl-cell--hide-phone">
+                        <p class="mdl-typography--font-light">© 2020 Voya Health. All Rights Reserved.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col  mdl-cell--12-col-phone  mdl-textfield--align-right">
+                        <div class="nanotek-ft-list">
+                            <ul>
+                                <li><a style="color: #122436" href="./privacy-policy.html">Privacy Policy</a></li>
+                                <li> <a style="color: #122436" href="./terms-of-use.html">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mdl-cell  mdl-cell--12-col-phone voya-copyright-text mdl-cell--hide-desktop mdl-cell--hide-tablet">
+                        <p class="mdl-typography--font-light">© 2020 Voya Health. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js">
+    </script>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-c8d5a2aa-6a2b-43b0-b768-de661cd86493"></div>
+
+</body>
+
+</html>

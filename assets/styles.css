@@ -1,0 +1,1761 @@
+body {
+    margin: 0;
+}
+
+
+/* Disable ugly boxes around images in IE10 */
+
+a {
+    text-decoration: none;
+    color: rgb(30, 30, 209);
+}
+
+a img {
+    border: 0px;
+}
+
+::-moz-selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+::selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+.mdl-textfield--expandable {
+    width: auto;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #48546B;
+    font-weight: 500;
+}
+
+ul {
+    display: inline-block;
+    font-family: 'ProximaNovaReg';
+}
+
+.mdl-button--raised.mdl-button--colored {
+    background: #009C9E;
+}
+
+.collapsible {
+    font-family: 'ProximaNovaReg';
+    background-color: #FEFFFF;
+    color: #48546B;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 17px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #FFFFFF;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #009C9E;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #FEFFFF;
+}
+
+.store-link {
+    margin: 8px;
+}
+
+.submit_btn {
+    margin-top: 20px;
+}
+
+.mdl-layout-title {
+    font-family: 'ProximaNovaReg';
+}
+
+.mdl-layout__header--waterfall.is-casting-shadow {
+    box-shadow: none;
+}
+
+.mdl-shadow--2dp {
+    background: #FFFFFF;
+    box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.08);
+}
+
+.mdl-typography--text {
+    color: #48546B;
+}
+
+.mdl-typography--font-light .mdl-typography--subhead span {
+    font-size: 20px;
+}
+
+.mdl-cell {
+    margin: 0 !important;
+}
+
+.mdc-list-item__text {
+    color: #45525F;
+    font-size: 24px;
+    line-height: 26px;
+    font-family: ProximaNovaReg;
+}
+
+.mdl-card__actions {
+    outline: skyblue solid 5px;
+    z-index: 4;
+}
+
+.mdl-card__title-text {
+    margin: auto;
+    position: relative;
+    top: 6px;
+    color: #48546B;
+    height: 64px;
+    font-family: RecoletaMedium;
+    font-size: 40px;
+}
+
+.mdl-card__supporting-text>p {
+    font-family: ProximaNovaReg;
+    font-size: 18px;
+    margin: 10px;
+    text-align: left;
+}
+
+.demo-card-wide>.mdl-card__menu {
+    color: #fff;
+}
+
+.mdl-textfield {
+    width: 250px;
+    margin-right: 10px;
+}
+
+
+/* search and heilight */
+
+.highlight {
+    background-color: #fff34d;
+    -moz-border-radius: 5px;
+    /* FF1+ */
+    -webkit-border-radius: 5px;
+    /* Saf3-4 */
+    border-radius: 5px;
+    /* Opera 10.5, IE 9, Saf5, Chrome */
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    /* FF3.5+ */
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    /* Saf3.0+, Chrome */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    /* Opera 10.5+, IE 9.0 */
+}
+
+.highlight {
+    padding: 1px 4px;
+    margin: 0 -4px;
+}
+
+
+            /* Voya custom fonts */
+            
+            @font-face {
+                font-family: RecoletaRegular;
+                src: url('./fonts/Recoleta-Regular.otf') format('truetype');
+            }
+            
+            @font-face {
+                font-family: RecoletaMedium;
+                src: url('./fonts/Recoleta-Medium.otf') format('truetype');
+            }
+            
+            @font-face {
+                font-family: RecoletaSemiBold;
+                src: url('./fonts/Recoleta-SemiBold.otf') format('truetype');
+            }
+            
+            @font-face {
+                font-family: ProximaNovaReg;
+                src: url('./fonts/ProximaNova-Reg.otf') format('truetype');
+            }
+            
+            .font-small {
+                font-size: 1rem;
+                line-height: 1.313rem;
+            }
+            
+            .font-regular {
+                font-size: 1.25rem;
+                line-height: 1.725rem;
+            }
+            
+            .font-standard {
+                font-size: 1.6rem;
+                line-height: 1.625rem;
+            }
+            
+            .font-x-standard {
+                font-size: 1.75rem;
+                line-height: 2.125rem;
+            }
+            
+            .font-medium {
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+
+            .nanotekindex-wid-mobile {
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
+            
+            .font-large {
+                font-size: 2.5rem;
+                line-height: 2.875rem;
+            }
+            
+            .font-header {
+                font-size: 2.5rem;
+                line-height: 3.438rem;
+            }
+            
+            .font-primary {
+                font-family: RecoletaMedium;
+                color: #48546B;
+            }
+            
+            .font-secondary {
+                font-family: ProximaNovaReg;
+                color: #48546B;
+            }
+            
+            .nanotekmobile-title {
+                display: none !important;
+            }
+            
+            .nanotekheader {
+                overflow: visible;
+                background-color: #ffffff;
+            }
+            
+            .fixed-container,
+            .fluid-container {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+                        
+            .mdl-layout__drawer-button {
+                display: none;
+            }
+            
+            .nanotekheader .material-icons {
+                color: #767777 !important;
+            }
+            
+            .nanotekheader .mdl-layout__drawer-button {
+                background: transparent;
+                color: #767777;
+            }
+            
+            .mdl-chips {
+                margin: 10px;
+                text-align: left;
+            }
+            
+            .mdl-chip,
+            .mdl-chip:active,
+            .mdl-chip:hover {
+                color: #48546B;
+                background: #dcf1ef;
+                border-radius: 3px;
+                padding: 3px 5px;
+                margin: 3px 2px;
+            }
+            
+            .mdl-chip__text {
+                font-family: 'ProximaNovaReg';
+                font-size: 1.5rem;
+                color: #48546B;
+            }
+            
+            .site-app-text {
+                margin: 16px 12px;
+            }
+            
+            .site-app-text p {
+                font-family: RecoletaMedium;
+                font-size: 18px;
+            }
+            
+            .site-app-text-card {
+                font-family: ProximaNovaReg;
+                font-size: 20px;
+                color: #48546B;
+            }
+
+            .patch-word-break {
+                /* These are technically the same, but use both */
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                word-break: break-word;
+            }
+            .patch-word-break--hyphens {
+                /* These are technically the same, but use both */
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                word-break: break-word;
+
+                /* Adds a hyphen where the word breaks*/
+                -ms-hyphens: auto;
+                -moz-hyphens: auto;
+                -webkit-hyphens: auto;
+                hyphens: auto;
+            }
+            
+            .nanoteknavigation-container {
+                margin: 0 auto;
+                -webkit-order: 1;
+                -ms-flex-order: 1;
+                order: 1;
+                transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .nanoteksearch-box.is-focused+.nanoteknavigation-container {
+                opacity: 0;
+                width: 100px;
+            }
+            
+            .nanoteksearch-box {
+                -webkit-order: 2;
+                -ms-flex-order: 2;
+                order: 2;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            
+            .nanotekmore-button {
+                -webkit-order: 3;
+                -ms-flex-order: 3;
+                order: 3;
+            }
+            
+            .nanotekdrawer {
+                border-right: none;
+            }
+            
+            .mdl-layout__drawer.is-visible {
+                background-color: #D5EDEC;
+                width: 280px;
+            }
+            
+            .nanotekdrawer .mdl-layout-title {
+                position: relative;
+                background: #F3FBFA;
+                height: 65px;
+            }
+            
+            .nanoteklogo-image {
+                width: 178px;
+                height: 30px;
+            }
+            
+            .nanoteklogo-image-ft {
+                width: 178px;
+                height: 30px;
+                margin-top: 80px;
+                margin-bottom: 30px;
+            }
+            
+            .nanotekdrawer .nanoteklogo-image {
+                position: absolute;
+                bottom: 16px;
+            }
+            
+            .nanotekbe-together-section {
+                position: relative;
+                background: url(./img/main-section-bg.svg)no-repeat;
+                background-size: contain;
+                background-position: 16% 40%;
+            }
+            
+            .nanotekcoming-soon-section {
+                position: relative;
+                width: auto;
+                background-color: #ffffff;
+                background: url('./img/comming-soon-bg.svg') center top no-repeat;
+                background-size: contain;
+            }
+            
+            .coming-soon-card {
+                height: 550px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .nanotek404-section {
+                margin-top: 5vh;
+                position: relative;
+                background-color: #ffffff;
+                background: url('./img/404-bg.svg') center top no-repeat;
+                background-size: cover;
+            }
+            
+            .logo-font .sub-slogan {
+                color: #48546B;
+                font-family: ProximaNovaReg;
+                font-size: 24px;
+                line-height: 34px;
+                max-width: 700px;
+                margin: 15px auto;
+            }
+            
+            .nanoteksub-slogan {
+                font-size: 21px;
+                padding-top: 24px;
+            }
+            
+            .nanotekcreate-character {
+                font-size: 21px;
+                background-color: #ffffff;
+            }
+            
+            .nanotekcreate-character a {
+                text-decoration: none;
+                color: #767777;
+                font-weight: 300;
+            }
+            
+            .nanotekscreen-section {
+                position: relative;
+                padding-top: 60px;
+                padding-bottom: 80px;
+            }
+            
+            .nanotekscreens {
+                text-align: right;
+                width: 100%;
+                white-space: nowrap;
+                overflow-x: auto;
+            }
+            
+            .nanotekscreen {
+                text-align: center;
+            }
+            
+            .nanotekscreen .nanoteklink {
+                margin: 16px;
+                display: block;
+                z-index: 2;
+            }
+            
+            .nanotekphone {
+                display: inline-block;
+                width: 64px;
+                margin-right: 48px;
+            }
+            
+            .nanotektablet {
+                display: inline-block;
+                width: 110px;
+                margin-right: 64px;
+            }
+            
+            .nanotektablet .nanoteklink {
+                display: block;
+                z-index: 2;
+            }
+            
+            .nanotektv {
+                display: inline-block;
+                width: 300px;
+                margin-right: 80px;
+            }
+            
+            .nanotekmain-section {
+                position: relative;
+                background-size: cover;
+                margin-top: 30px;
+            }
+            
+            .nanoteksection {
+                position: relative;
+                width: 100%;
+            }
+            
+            .nanoteksection-band {
+                position: relative;
+            }
+            .nanoteksection-band--temp {
+                position: relative;
+            }
+            
+            .nanoteksection-band-text {
+                font-family: 'RecoletaMedium';
+                color: #48546B;
+                margin-top: 45px;
+            }
+            
+            .nanoteksection-band-text p {
+                padding-top: 8px;
+            }
+            
+            .nanoteksection-band-text h3 {
+                font-family: RecoletaMedium;
+                text-align: left;
+            }
+            
+            .nanoteksection img {
+                width: 50vw;
+            }
+            
+            .nanoteklink {
+                text-decoration: none;
+                color: #122436 !important;
+            }
+            
+            .nanoteklink:hover {
+                color: #009C9E !important;
+            }
+            
+            .nanoteklink .material-icons {
+                position: relative;
+                top: -1px;
+                vertical-align: middle;
+            }
+            
+            .nanotekalt-link {
+                text-decoration: none;
+                color: #64ffda !important;
+                font-size: 16px;
+            }
+            
+            .nanotekalt-link:hover {
+                color: #00bfa5 !important;
+            }
+            
+            .nanotekalt-link .material-icons {
+                position: relative;
+                top: 6px;
+            }
+            
+            .nanotekcustomized-section {
+                text-align: right;
+            }
+            
+            .nanotekcustomized-section-text h3 {
+                font-family: RecoletaMedium;
+                font-size: 83px;
+                line-height: 70px;
+                color: #FFCDB2;
+            }
+            
+            .nanotekcustomized-section-text p {
+                padding-top: 16px;
+            }
+            
+            .nanotekcustomized-section-image {
+                background: url('./img/have_question.png') center top no-repeat;
+                background-size: cover;
+                min-height: 400px;
+            }
+            
+            .nanoteksub-section {
+                width: 100%;
+                min-height: 500px;
+                position: relative;
+                border: 1px red dotted;
+                /* TODO: only for illustration .. remove it on prod*/
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            
+            .nanoteksub-section-text {
+                margin-top: 15%;
+            }
+            
+            .nanoteksection-band-content {
+                margin-top: 70px;
+            }
+            
+            .nanotekcard-container {
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: -80px;
+                margin-top: 60px;
+            }
+            
+            .nanotekcard-container .mdl-card__media {
+                overflow: hidden;
+                background: transparent;
+            }
+            
+            .nanotekcard-container .mdl-card__media img {
+                width: 100%;
+            }
+            
+            .nanotekcard-container .mdl-card__title {
+                background: transparent;
+                height: auto;
+            }
+            
+            .nanotekcard-container .mdl-card__title-text {
+                color: black;
+                height: auto;
+            }
+            
+            .nanotekcard-container .mdl-card__supporting-text {
+                height: auto;
+                color: black;
+                margin-top: -30px;
+            }
+            
+            .nanotekcard-container .mdl-card__actions {
+                position: absolute;
+                bottom: 0;
+            }
+            
+            .nanotekcard-container .mdl-card__actions a {
+                border-top: none;
+                font-size: 16px;
+            }
+            
+            .nanotekfooter {
+                background-color: #FFFBF4;
+                position: relative;
+            }
+            
+            .nanotekfooter a:hover {
+                color: #009C9E;
+            }
+            
+            .nanotekfooter .mdl-mega-footer--top-section::after {
+                border-bottom: none;
+            }
+            
+            .nanotekfooter .mdl-mega-footer--middle-section::after {
+                border-bottom: none;
+            }
+            
+            .nanotekfooter .mdl-mega-footer--bottom-section {
+                position: relative;
+            }
+            
+            .nanotekfooter .mdl-mega-footer--bottom-section a {
+                margin-right: 2em;
+            }
+            
+            .nanotekfooter .mdl-mega-footer--right-section a .material-icons {
+                position: relative;
+                top: 6px;
+            }
+            
+            .nanoteklink-menu:hover {
+                cursor: pointer;
+            }
+            
+            .nanotekwatch-video-yellow-section {
+                background-color: #FFF8E7;
+                height: 146px;
+                width: 100%;
+            }
+            
+            .nanotekwatch-video-yellow-section-text {
+                display: block;
+                font-size: 20px;
+                padding: 10px;
+                font-family: ProximaNovaReg;
+            }
+            
+            .play-icon {
+                color: #FC9178;
+                float: right;
+                display: inline;
+                font-size: 73px;
+            }
+
+            /* Voya Colors */
+            
+            .nanoteksecondary-color {
+                color: #658FDA
+            }
+            
+            .nanoteklight-yellow {
+                color: #F3FBFA;
+            }
+            
+            .nanotekinactive-button {
+                color: green;
+            }
+            /***********/
+            /* Voya UI Cards */
+            
+            .nanotek-ui-card {
+                min-height: 130px;
+                overflow: inherit;
+                margin: 5px 5px;
+                border-radius: 9px;
+                box-shadow: 18px 12px 60px -10px rgba(74, 83, 137, 0.08);
+            }
+            
+            .nanotekui-card .nanotekicon {
+                width: 50px !important;
+                margin-top: 10px !important;
+            }
+            /* testimonials UI */
+            
+            .testimonial {
+                border-left: 7px solid #FC9178;
+                width: 100%;
+                padding: 10px;
+            }
+            
+            .testimonial>h4 {
+                font-family: ProximaNovaReg;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                color: #48546B;
+                display: inline;
+            }
+            
+            .testimonial>p {
+                font-family: ProximaNovaReg;
+                font-size: 16px;
+                letter-spacing: 0.3px;
+                color: #122436;
+                opacity: 0.5;
+                margin-left: 52px;
+                margin-top: -25px;
+            }
+            /* contact form coming soon */
+            
+            .demo-card-wide.mdl-card {
+                width: 600px;
+                height: 470px;
+            }
+            
+            .demo-card-wide {
+                height: 200px;
+            }
+            
+            #mycard {
+                height: 700px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .nanoteksection-band-content {
+                margin-top: 0px;
+            }
+            
+            .nanotekpartner-image {
+                width: 100%;
+            }
+            
+            .nanotekbutton {
+                letter-spacing: 0.5px;
+                font-weight: 600;
+                font-family: ProximaNovaReg;
+                border: 1px solid #fff;
+                margin-right: 20px;
+                text-decoration: none;
+                text-transform: capitalize;
+                display: flex;
+                color: #009C9E;
+                padding: 12px 12px;
+                width: auto;
+                font-size: 14px;
+                border-radius: 59px;
+            }
+            
+            .nanotekbutton-mobile {
+                font-family: ProximaNovaReg;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: #009C9E;
+                width: 180px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #009C9E;
+                border-radius: 33px;
+            }
+            
+            .nanotekbutton-mobile-colored {
+                font-family: ProximaNovaReg;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                width: 180px;
+                background-color: #009C9E;
+                border-radius: 33px;
+            }
+            
+            .nanotekbutton:hover {
+                border-color: #009C9E;
+                background: #ffffff;
+                color: #009C9E;
+            }
+            
+            .nanotekbutton-colored:hover {
+                border-color: #009C9E;
+                background: #ffffff;
+                color: #009C9E;
+            }
+            
+            .nanotekbutton-colored {
+                letter-spacing: 0.5px;
+                font-weight: 600;
+                font-family: ProximaNovaReg;
+                border: 1px solid #009C9E;
+                text-transform: capitalize;
+                padding: 12px 18px;
+                text-decoration: none;
+                width: auto;
+                font-size: 14px;
+                background: #009C9E;
+                color: #FFFFFF;
+                border-radius: 59px;
+            }
+            
+            .nanoteklearn-more-button-colored,
+            .mdl-button:focus:not(:active) {
+                text-transform: capitalize;
+                height: 56px;
+                width: 200px;
+                font-size: 18px;
+                font-weight: 400;
+                background: #009C9E;
+                border: 1px solid #009c9e;
+                color: #FFFFFF;
+                border-radius: 33px;
+            }
+            
+            .nanoteknav-right {
+                float: right;
+            }
+            
+            .nanoteknav-left {
+                float: right;
+            }
+            
+            .nanotekhd-pd .mdl-layout__header-row {
+                padding: 10px 164px 10px 164px;
+            }
+            
+            .nanoteklearn-more-button-colored:hover {
+                background: #FFFFFF;
+                color: #009C9E;
+            }
+
+            ul.nanoteklist--aligned {
+                padding-left: 16px;
+                list-style-position: outside;
+            }
+            
+            .nanotekft-list ul {
+                margin-top: 15px;
+                display: inline-flex;
+                list-style: none;
+            }
+            
+            .nanotekft-list ul a {
+                font-family: 'ProximaNovaReg';
+                font-size: 14px;
+                text-decoration: none;
+            }
+            
+            .nanotekft-list ul li:first-child {
+                padding-right: 30px;
+            }
+            
+            .no-padding {
+                padding: 0;
+            }
+            
+            .no-margin {
+                margin: 0;
+            }
+
+            .download-app {
+                margin: 0 auto;
+                display: inline-block;
+                padding-left: 0;
+            }
+            
+            .download-app .nanotekappstore,
+            .download-app .nanotekgoogle-play {
+                display: inline-block;
+            }
+            
+            .download-app .nanotekgoogle-play {
+                margin-top: 0;
+            }
+            
+            .nanotekgoogle-play {
+                margin-top: 20px;
+            }
+            
+            .nanotekquestion-text {
+                margin-top: 25px;
+                margin-bottom: 5px;
+                font-weight: 600 !important;
+                color: #122436;
+                font-family: 'ProximaNovaReg';
+            }
+            
+            .nanotekcopyright-text p {
+                font-family: 'ProximaNovaReg';
+                margin-top: 15px;
+                color: #122436;
+            }
+            
+            .mdl-card__supporting-text p {
+                color: #48546B;
+                font-weight: normal;
+                font-size: 16px !important;
+                line-height: 21px;
+                text-align: left;
+                letter-spacing: 0.003em;
+                margin-bottom: 0px;
+            }
+            
+            .nanotekrefer-para {
+                color: #45525F;
+                font-size: 22px;
+                line-height: 26px;
+                font-family: ProximaNovaReg
+            }
+            
+            .nanotekrefer-txt {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 46px;
+                letter-spacing: 0.003em;
+                color: #48546B;
+            }
+            
+            .nanotekservice-list {
+                text-align: left;
+            }
+            
+            .nanotekprovider-hd {
+                color: #45525F;
+                font-size: 28px;
+                line-height: 34px;
+                font-family: ProximaNovaReg
+            }
+            
+            .nanotekservice-list ul {
+                padding: 9px;
+            }
+            
+            .nanotekservice-list .mdc-list-item__text {
+                font-size: 21px;
+                padding-right: 70px;
+            }
+            
+            .nanotekicon {
+                text-align: center;
+                margin: 0 auto;
+                top: -30px;
+                z-index: 999;
+                position: relative;
+            }
+            
+            .nanotekcm-para {
+                text-align: center !important;
+            }
+            
+            .cm-sec-br {
+                border-radius: 12px;
+            }
+            
+            .nanotekinput {
+                color: #353535;
+                min-height: 38px;
+                margin-bottom: 18px;
+                width: 100%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border: 1px solid #b5b5be;
+                border-radius: 4px;
+                padding-left: 0.875rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-duration: 150ms;
+            }
+            
+            input:focus {
+                outline-color: #009C9E;
+            }
+            
+             ::-webkit-input-placeholder {
+                /* Edge */
+                color: #B5B5BE;
+            }
+            
+             :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #B5B5BE;
+            }
+            
+             ::placeholder {
+                color: #B5B5BE;
+            }
+            
+            .nanotekcs-fm {
+                width: 70%;
+                margin: 0 auto;
+            }
+            
+            .vh-lg-pt {
+                padding-top: 15px;
+            }
+            
+            .nanoteksubmit-btn {
+                margin-top: 40px;
+            }
+            
+            .nanotekui-card:hover {
+                box-shadow: 18px 12px 60px 5px rgb(74 83 137 / 16%);
+            }
+            /****/
+            /****/
+            
+            .nanotekindex-image-wid100 {
+                width: 100%;
+            }
+            
+            .nanotekindex-image-wid85 {
+                width: 85%;
+            }
+
+            .nanotekindex-image-wid95 {
+                width: 95%;
+            }
+            
+            .nanotekindex-image-wid60 {
+                width: 60%;
+            }
+            
+            .nanotekprice-txtcolor {
+                color: #009C9E;
+            }
+            
+            .nanotekalign-left {
+                float: left;
+            }
+            
+            .nanotekalign-right {
+                float: right;
+            }
+            
+            .nanotekhave-question-section {
+                position: relative;
+                z-index: 3;
+                min-height: 350px;
+            }
+
+            .nanotekhome-side-bg {
+                background-repeat: no-repeat;
+                background-image: url(./img/home-side-banner.svg);
+                background-position: right;
+                padding-top: 80px !important;
+            }
+
+            .nanotekplant-bg {
+                padding-top: 108px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-left: -85px;
+            }
+            
+            .home-side-banner2 {
+                background-image: url(./img/ronica-bg-2.svg);
+                background-repeat: no-repeat;
+                padding: 9.35rem 0 12rem;
+            }
+            
+            .nanotekmt-1 {
+                margin-top: 10px;
+            }
+
+            .nanotekml-5 {
+                margin-left: 50px;
+            }
+            
+            .nanotekmt-2 {
+                margin-top: 20px;
+            }
+
+            .main--mt {
+                margin-top: 40px;
+            }
+            
+            .nanotekpt-4 {
+                padding-top: 40px;
+            }
+            
+            .nanotekhd-lh {
+                line-height: 32px;
+            }
+            
+            .nanotekindex-list {
+                padding-left: 16px;
+                font-size: 18px;
+            }
+            
+            .nanotekmt-0 {
+                margin-top: 0;
+            }
+            
+            .nanotekmt-mb-2 {
+                margin: 2rem 0;
+            }
+            
+            .home-side-banner3 {
+                background-image: url(./img/home-side-banner3.svg);
+                background-repeat: no-repeat;
+                background-position: 100% 80%;
+            }
+            
+            .home-banner4 {
+                position: relative;
+                z-index: 0;
+                height: 100%;
+                min-height: 350px;
+                width: 100%;
+                padding: 1.35rem 0 0;
+            }
+            .home-banner4::before {
+                background-image: url(./img/home-left-side-banner4.svg);
+                background-repeat: no-repeat;
+                background-position: left; 
+                width: 100%;
+                height: 100%;
+                content: " ";
+                position: absolute;
+                bottom: 0;
+                right: 10rem;
+            } 
+            .home-banner4::after {
+                background-image: url(./img/home-right-side-banner4.svg);
+                background-repeat: no-repeat;
+                background-position: right; 
+                width: 100%;
+                height: 100%;
+                content: " ";
+                position: absolute;
+                bottom:0;
+                left: 20rem;
+            } 
+            
+            .nanotekcoonection-section {
+                padding: 0rem 0 11rem;
+            }
+            
+            h4.nanoteksection-band-text-subheader {
+                font-size: 21px;
+            }
+            
+            .nanotekmt-3 {
+                margin-top: 30px;
+            }
+            
+            .nanotekmt-4 {
+                margin-top: 40px;
+            }
+            
+            .nanotekmt-5 {
+                margin-top: 50px;
+            }
+            
+            .nanotekvertical-middle {
+                align-items: center;
+                justify-content: center;
+                /** for text*/
+                align-self: center;
+            }
+            .vertical-align {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+            .vertical-align.lady-phone {
+                width: initial;
+                height: 100%;
+                align-items: center;
+            }
+
+            .nanotekcoaching-section .nanotekslogan h2 {
+                margin-top:0;
+            }
+
+            .nanotekcoaching-img img {
+                /* don't put width, let overflow image */
+                height: 100%;
+            }
+
+            .ronica-img img {
+                height: 100%;
+                justify-self: left;
+                margin-left: 18%;
+            }
+
+            .nanotekmunchkin {
+                position: relative;
+                height: inherit;
+            }     
+            .nanotekmunchkin img {
+                position: absolute;
+                bottom: 0;
+            }   
+            .nanotekmunchkin img.left {
+                right: 0;
+                left: unset;
+            }
+            .nanotekmunchkin img.right {
+                top: 50%;
+                left: 0;
+            }
+
+
+            .nanotekfaq {
+                padding: 55px 0;
+                background-color: #F8F9FA;
+            }
+
+            .nanotekfaq-who {
+                padding: 90px 0;
+                text-align: left;
+                background-image: url('./img/faq-banner-bg.svg');
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+            
+            .nanotekfaq-who h6 {
+                font-family: ProximaNovaReg;
+                font-size: 16px;
+                line-height: 40px;
+                letter-spacing: 0.3px;
+                text-transform: uppercase;
+                color: #658FDA;
+            }
+            
+            .nanotekfaq-who h3 {
+                font-family: RecoletaMedium;
+                /* font-size: 50px;
+                line-height: 78px; */
+                letter-spacing: 0.3px;
+                color: #FFCDB2;
+                margin-top: 0px;
+                margin-bottom: 15px;
+            }
+            
+            .nanotekfaq-who p {
+                font-family: ProximaNovaReg;
+                font-size: 23px;
+                line-height: 30px;
+                color: #48546B;
+                margin-bottom: 50px;
+            }
+               
+            .nanotekfaq-who .faq-banner-img {
+                width: 100%;
+            }
+
+            .faq-banner-img {
+                height: 100%;
+            }
+
+            .nanoteklearn-more-button-colored {
+                font-family: ProximaNovaReg;
+            }
+            
+            .nanoteklink b {
+                font-family: 'ProximaNovaReg';
+            }
+
+            /* media for container à la @bootstrap 4*/
+            @media (min-width: 576px) {
+                .fixed-container {
+                    max-width: 540px;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                .fixed-container {
+                    max-width: 720px;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .fixed-container {
+                    max-width: 960px;
+                }
+            }
+            
+            @media (min-width: 1200px) {
+                .fixed-container {
+                    max-width: 1024px;
+                }
+            }
+           
+            @media (min-width: 1400px) {
+                .fixed-container {
+                    max-width: 1200px !important;
+                }
+              
+                .ronica-img img {
+                    margin-left: 0;
+                }
+            }
+            @media (min-width: 1900px) {
+                .fixed-container {
+                    max-width: 1200px !important;
+                }
+            }
+            @media (min-width: 2560px) {
+                .fixed-container {
+                    max-width: 1700px !important;
+                }
+            }
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+            /* @bootstrap containers finished*/
+
+            /**** Large screen layout ****/
+            
+            @media (min-width: 2000px) {
+                .nanotekcoming-soon-section {
+                    background-size: cover;
+                }
+              
+                /*.home-banner4,
+                .nanotekhave-question-section {
+                    min-height: 650px !important;
+                }*/
+            }
+
+
+            @media (min-width:1200px) {
+                /* .nanotekhd-pd {
+                    padding-top: 20px;
+                } */
+                .nanoteklogo-image-ft {
+                    margin-top: 80px;
+                    margin-bottom: 70px;
+                }
+                .mdl-mega-footer {
+                    padding: 16px 164px;
+                }
+                .nanoteksection-band-text .mdl-grid {
+                    padding: 16px 75px;
+                }
+                .nanoteksection-band .mdl-grid {
+                    padding: 16px 164px;
+                }
+            }
+
+            @media (max-width: 1320px) {
+                .nanotekmunchkin img.right {
+                    right: unset;
+                    left: 0;
+                } 
+                .nanotekmunchkin img.left{
+                    right:0;
+                    left:auto;
+                }
+            }
+            @media (max-width: 1200px) {
+                .home-banner4::before,
+                .home-banner4::after {
+                    background-image: none;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                .nanoteknavigation {
+                    min-width: 730px;
+                }
+                /*turn-off image overflow on middle screen*/
+                .nanotekcoaching-img img,
+                .vertical-align.lady-phone {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            /*** Tablets + some smartphones */
+            @media (max-width: 900px) {
+                .mdl-layout__drawer .mdl-navigation {
+                    margin: 8rem 2rem;
+                }
+                .nanotekbe-together-section {
+                    position: relative;
+                    top: 70px;
+                    background: none;
+                }
+                .nanoteksection img {
+                    width: 90vw;
+                }
+                .nanoteksection-band-text {
+                    margin-top: 25px;
+                }
+                .nanoteksection-band-text h3 {
+                    font-size: 25px;
+                }
+                .nanotekslogan h2 {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+                .nanotekcoaching-section .nanoteksignin-hiddion-mobile {
+                    display: none;   
+                }
+                .nanotekcoaching-img {
+                    margin-top: 20px !important;
+                }
+                
+                .home-banner4 .banner-text {
+                    width: 100%;
+                }
+                .home-banner4 .nanotekmunchkin {
+                    width: 100%;
+                }
+                .home-banner4 .nanotekmunchkin img{
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    bottom: auto;
+                }
+                .nanotekmunchkin img.right {
+                    padding-top: 30px;
+                }
+
+                .nanotekmt-5 {
+                    margin-top: 25px;
+                }
+                .font-medium {
+                    font-size: 17px;
+                }
+                .font-large {
+                    font-size: 2rem;
+                }
+                .nanotekheader .mdl-layout__drawer-button {
+                    background: transparent;
+                    color: #767777;
+                }
+                .nanotektitle {
+                    display: none !important;
+                }
+                .nanotekcard-container {
+                    margin-top: 20px;
+                    max-width: 85%;
+                    margin-bottom: 0px;
+                }
+                /*.nanotekui-card {
+                    margin: 10px 12px;
+                }*/
+                .nanotekmobile-title {
+                    display: block !important;
+                    position: absolute;
+                    left: calc(50% - 70px);
+                    top: 12px;
+                    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+            consecutive "+" operators in some cases. Therefore, we need to use both
+            here to cover all the bases. */
+                .voya.nanoteksearch-box.is-focused~.nanotekmobile-title,
+                .nanoteksearch-box.is-focused+.nanoteknavigation-container+.nanotekmobile-title {
+                    opacity: 0;
+                }
+                .nanotekmore-button {
+                    display: none;
+                }
+                .nanoteksearch-box.is-focused {
+                    width: calc(100% - 48px);
+                }
+                .nanoteksearch-box .mdl-textfield__expandable-holder {
+                    width: 100%;
+                }
+                .nanotekslogan {
+                    font-family: RecoletaBold;
+                    font-size: 26px;
+                }
+                .nanoteksub-slogan {
+                    font-size: 16px;
+                    margin: 0px 16px;
+                    padding-top: 8px;
+                }
+                /* testimonials UI */
+                .testimonial>h4 {
+                    font-size: 11px !important;
+                }
+                .testimonial>p {
+                    font-size: 10px !important;
+                }
+                .nanotekcreate-character {
+                    background-color: #ffffff;
+                }
+                .nanotekcreate-character img {
+                    height: 12px;
+                }
+                .nanoteksection-band-text {
+                    margin-left: 0px;
+                    padding: 5px;
+                }
+                .mdl-mega-footer--top-section {
+                    padding: 15px;
+                }
+                .nanotekfooter .mdl-mega-footer--bottom-section {
+                    display: none;
+                }
+            }
+            @media (max-width: 839px) {
+                .nanotekrigth-item {
+                    margin-left: 0;
+                }
+                .ronica-img img {
+                    margin-left: 0;
+                    max-width:45%;
+                }
+                .nanotekfaq-who .faq-banner-img {
+                    margin-top: 30px;
+                }
+                .nanotekfaq-who {
+                    /*background-position: 23% -96%;*/
+                    background-image: none;
+                }
+            }
+            @media (max-width:768px) {
+                .menu-list-mobile li a {
+                    font-size: 16px !important;
+                }
+                .menu-list-mobile {
+                    margin-bottom: 30px;
+                }
+                .menu-hiddion-mobile {
+                    display: none;
+                }
+                .nanotekhiddien-mobile {
+                    display: none;
+                }
+
+                .nanotekhome-side-bg {
+                    background-image: none;
+                }
+
+                .home-side-banner2 {
+                    background-image: none;
+                    padding: 0 0 2rem;
+                    background-position: -359px;
+                }
+
+                .nanotekfaq-who h4 {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+                
+                .nanotekfaq-who h6 {
+                    line-height: 22px;
+                }
+
+                .nanotekfaq {
+                    /*padding: 16px 16px;*/
+                    padding: 16px 0;
+                }
+
+                .home-side-banner3 .nanotekimg-wid-mob-50 {
+                    margin-bottom: 20px;
+                }
+                .nanotekimg-wid-mob-50 {
+                    width: 50% !important;
+                }
+                .font-standard {
+                    font-size: 1.34rem;
+                    line-height: 28px;
+                }
+                .nanotekhd-lh {
+                    font-size: 23px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+                .home-side-banner3 h4.nanoteksection-band-text.nanotekhd-lh.nanotekmt-0 {
+                    text-align: center;
+                }
+                .home-side-banner3 {
+                    /*background-position: -18% 87%;*/
+                    background-image: none;
+                }
+                .home-banner4 {
+                    background-image: none;
+                }
+                .nanotekcoonection-section {
+                    padding: 0rem 0 0rem;
+                }
+                .nanotekquestion-text {
+                    margin-top: 15px;
+                }
+                .nanotekfooter-mb-0 {
+                    margin-bottom: 0;
+                }
+                .nanoteklogo-image-ft {
+                    margin-top: 80px;
+                }
+                .footer-links {
+                    margin-top: 20px;
+                }
+                .nanotekgoogle-play-pt {
+                    padding-top: 10px;
+                }
+                .nanotekapp-button-center-mobile {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+                .nanotekindex-wid-mobile {
+                    line-height: 21px;
+                    max-width: 80%;
+                }
+                .mdl-layout__drawer-button {
+                    display: block;
+                }
+                .nanotekservice-list .mdc-list-item__text {
+                    padding-right: 0 !important;
+                }
+                .demo-card-wide.mdl-card {
+                    width: 600px;
+                    min-height: 76%;
+                }
+                .nanotekmain--mt {
+                    margin-top: 65px;
+                }
+                .vh-img-mbl {
+                    padding: 0;
+                }
+                .nanotekui-card {
+                    margin: 25px 5px;
+                }
+                .mb-mt {
+                    margin-top: -21px;
+                    padding-top: 0 !important;
+                }
+                .nanotekapps-ft {
+                    padding-top: 30px;
+                }
+                .nanotekft-list,
+                .nanotekcopyright-text {
+                    text-align: left;
+                }
+                .nanotekcopyright-text p {
+                    margin-top: 0 !important;
+                }
+                .nanotekappstore,
+                .nanotekgoogle-play {
+                    text-align: left;
+                }
+                .download-app .nanotekgoogle-play {
+                    margin-top: 0px;
+                }
+                .nanotekft-list ul {
+                    padding: 0;
+                    margin-top: 0;
+                }
+                .nanoteksignin-hiddion-mobile {
+                    display: none;
+                }
+                .nanotekbe-together-section::before {
+                    position: absolute;
+                    content: '';
+                    width: 228px;
+                    min-height: 686px;
+                    left: 0;
+                    right: 0;
+                    top: -62px;
+                    margin: 0 auto;
+                    z-index: -1;
+                    background: #FFEDE3;
+                }
+                .nanoteksection-band .mdl-grid {
+                    padding: 16px 36px;
+                }
+                .nanotekprovider-hd {
+                    font-size: 22px !important;
+                    line-height: 27px;
+                }
+            }
+
+            /*** Mobile loyout */
+            @media (max-width:640px) {
+                .nanoteklogo-image.logo-with-drawer {
+                    margin-left: 40px;
+                }
+            }
+ 
+            @media (max-width:480px) {
+                .download-app .nanotekgoogle-play {
+                    margin-top: 20px;
+                }
+                .nanoteklogo-image.logo-with-drawer {
+                    margin-left: 20%;
+                }
+            }
+            
+            @media screen and (max-width: 1024px) {
+                .nanoteknav-right {
+                    float: none;
+                }
+            }
+            
+            @media (max-width: 1200px) and (min-width: 600px) {
+                .nanotekhd-pd .mdl-layout__header-row {
+                    padding: 0 35px 0 35px;
+                }
+                .nanoteksection-band .mdl-grid {
+                    padding: 16px 35px;
+                }
+            }
+            
+            .nanotekpr-25 {
+                padding-right: 25px;
+            }

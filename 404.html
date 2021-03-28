@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Get great care from anywhere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Nanotek Business Solutions</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192106551-1"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WM19EMNKD7');
+    </script>
+
+    <!-- Lottie Animations -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        /* to make smoothscroll transition available on page*/
+        html, body,
+        .mdl-layout__container,
+        .mdl-layout__container {
+            max-height: 100%;
+            height: inherit;
+        }
+        .menu-list {
+            list-style: none;
+            display: inline-flex;
+        }
+        
+        .menu-list-mobile {
+            list-style: none;
+            display: block;
+            padding: 0;
+        }
+        
+        .voya-menu {
+            text-align: center;
+        }
+        
+        .menu-list.voya-center-menu {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu-list li a {
+            font-size: 14px;
+            font-family: ProximaNovaReg;
+            color: #48546B;
+            padding-right: 40px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .menu-list.voya-center-menu li a {
+            padding-right: 10px;
+        }
+        
+        .menu-list-mobile li {
+            text-align: center;
+        }
+        
+        .menu-list-mobile li a {
+            font-weight: 600;
+            font-size: 18px;
+            font-family: ProximaNovaReg;
+            color: #48546B;
+            text-decoration: none;
+        }
+        /**
+        use this style temporary to not broke others page but to use it on index
+        when finish with all others pages - remove and use .voya-section-band,
+        just remove dependacy with .mdl-grid*/
+        
+        .voya-section-band--temp {
+            position: relative;
+        }
+        /*.fixed-container {
+            border: 1px solid red;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout">
+        <!-- main site navigation -->
+        <header class="nanotek-header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row fixed-container">
+                <div class="mdl-cell--3-col">
+                    <span class="mdl-layout-title">
+                        <a href="./index.html"><img src="https://via.placeholder.com/100" class="nanotek-logo-image logo-with-drawer"></a>
+                    </span>
+                </div>
+                <div class="menu-hiddion-mobile mdl-cell--2-offset-desktop mdl-cell--6-col-desktop">
+                    <ul class="menu-list">
+                    </ul>
+                </div>
+                <div style="display:none" class="nanotek-navigation-container voya-signin-hiddion-mobile mdl-cell--4-col">
+                    <nav class="nanotek-navigation mdl-navigation voya-nav-right">
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="nanotek-drawer mdl-layout__drawer">
+            <nav class="mdl-navigation">
+            </nav>
+        </div>
+        <!-- firest Section -->
+        <div class="nanotek-main-section main--mt">
+            <div class="nanotek-section-band--temp jquery-start-scrolling">
+                <!--first image-->
+                <div class="fixed-container">
+                    <div class="mdl-grid no-padding">
+                        <div class="mdl-cell mdl-cell--8-col voya-coaching-section voya-vertical-middle">
+                            <div class="vertical-align">
+                                <div class="nanotek-slogan mdl-layout-title">
+                                    <h3 class="font-primary font-header">Ooops ...</h3>
+                                    <lottie-player src="./assets/404-not-found-ghost.json"  background="transparent"  speed="1"  style="width: 250px; height: 250px;"  loop autoplay></lottie-player>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section-->
+        <footer class="nanotek-footer mdl-mega-footer">
+            <div class="mdl-mega-footer__middle-section mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col  mdl-cell--12-col-phone">
+                    <a href="./index.html">
+                        <lottie-player src="./assets/contract-signing.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
+
+                    </a>
+                </div>
+            </div>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col  mdl-cell--12-col-phone voya-copyright-text mdl-cell--hide-phone">
+                    <p class="mdl-typography--font-light">© 2021 Nanotek Business Solutions. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-c8d5a2aa-6a2b-43b0-b768-de661cd86493"></div>
+</body>
+
+</html>
