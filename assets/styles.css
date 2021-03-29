@@ -648,8 +648,9 @@ ul {
                 font-size: 16px;
             }
             
-            .nanotekfooter {
-                background-color: #FFFBF4;
+            .nanotek-footer {
+                background-color: #0085ac;
+                color: #ffffff;
                 position: relative;
             }
             
