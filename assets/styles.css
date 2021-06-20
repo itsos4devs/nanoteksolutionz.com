@@ -179,7 +179,7 @@ ul {
 }
 
 
-            /* Voya custom fonts */
+            /* company custom fonts */
             
             @font-face {
                 font-family: RecoletaRegular;
@@ -703,7 +703,7 @@ ul {
                 font-size: 73px;
             }
 
-            /* Voya Colors */
+            /* company Colors */
             
             .nanoteksecondary-color {
                 color: #658FDA
@@ -717,7 +717,7 @@ ul {
                 color: green;
             }
             /***********/
-            /* Voya UI Cards */
+            /* company UI Cards */
             
             .nanotek-ui-card {
                 min-height: 130px;
@@ -1506,7 +1506,7 @@ ul {
                 /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
             consecutive "+" operators in some cases. Therefore, we need to use both
             here to cover all the bases. */
-                .voya.nanoteksearch-box.is-focused~.nanotekmobile-title,
+                .company.nanoteksearch-box.is-focused~.nanotekmobile-title,
                 .nanoteksearch-box.is-focused+.nanoteknavigation-container+.nanotekmobile-title {
                     opacity: 0;
                 }
